@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Master</string>
+    <string name="btn_add_master">Добавить мастера в базу данных</string>
+    <string name="btn_order_view">Просмотреть заказы</string>
+    <string name="text_master_one">Добро пожаловать в приложение!\n Внесите свои данные в базу и получайте заказы.\n Приложение может потребовать доступ к локации, вашему местопожению.</string>
+    <string name="text_add_master">Введите свои данные\n и нажмите кнопку\n "Сохранить данные в базе"</string>
+    <string name="text_name">Имя</string>
+    <string name="text_second_name">Фамилия</string>
+    <string name="text_address_master">Адресс проживания \n (город, улица, дом/кв)</string>
+    <string name="text_phone_master">Номер телефона</string>
+    <string name="btn_text_master_save">"Сохранить данные в базе"</string>
+    <string name="text_order">Введите дату\n когда вы можете выполнить заказ\n и нажмите кнопку\n [Показать заказы]. \nЧтобы просмотреть все свободные заказы,\n не вводите дату и нажмите кнопку"</string>
+    <string name="btn_order_from_base">Показать заказы</string>
+    <string name="example_date_hint">Например: 2023-12-31</string>
+    <string name="btn_back">Вернуться в главное меню</string>
+    <string name="text_booking">Для бронирования заказа \nвведите свой регистрационный номер</string>
+    <string name="hint_booking_order">Номер заказа</string>
+    <string name="hint_booking_master">Регистрационный номер мастера</string>
+    <string name="btn_booking_save">Бронировать</string>
+    <string name="btn_booking_menu">Вернуться в главное меню</string>
+    <string name="btn_your_order">Просмотреть свои заказы</string>
+    <string name="text_your_order">Для просмотра своих заказов \nвведите свой регистрационный номер</string>
+    <string name="btn_your_view">Показать заказы</string>
+    <string name="order_main">address</string>
+    <string name="order_n">Заказ № </string>
+    <string name="due_date">Дата выполнения: </string>
+    <string name="btn_duedata_save">Записать дату </string>
+    <string name="toast_numb_master">Введите регистрационный номер мастера </string>
+    <string name="toast_date_completion">Введите дату выполнения заказа </string>
+    <string name="toast_date">Формат даты не верный. Повторите ввод даты. (год-месяц-число) </string>
+    <string name="date_save">Дата выполнения сохранена:</string>
+    <string name="auth_tv">Для входа или регистрации \nвведите в поля свой номер телефона и пароль</string>
+    <string name="auth_hint">+380501112233</string>
+    <string name="auth_hint_pass">******</string>
+    <string name="btn_reg">Регистрация</string>
+    <string name="toast_auth">Заполните поля, введите номер телефона и пароль</string>
+    <string name="btn_auth">Войти</string>
+    <string name="toast_auth_last">Пароль и логин приняты</string>
+
+</resources>
