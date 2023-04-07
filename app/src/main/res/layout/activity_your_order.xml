@@ -30,16 +30,14 @@
         android:textColor="@color/white"
         android:textSize="20sp"/>
 
-    <EditText
+    <TextView
         android:id="@+id/et_your_master"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
-        android:gravity="center_horizontal"
-        android:textColorHint="@color/hint"
-        android:inputType="number"
-        android:hint="@string/hint_booking_master"/>
+        android:gravity="center_horizontal"/>
+
     <Button
         android:id="@+id/btn_your_view"
         android:layout_width="match_parent"

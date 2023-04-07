@@ -34,7 +34,8 @@ public class Auth extends AppCompatActivity {
     public String telMaster, passwordMaster;
     EditText phone, password;
     TextView auth_text;
-
+    String flag;
+    static String idMaster;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +46,10 @@ public class Auth extends AppCompatActivity {
         password=(EditText) findViewById(R.id.et_password);
     }
 
+
     public void onClickEnter(View view){
         String fl="1";
+        flag=fl;
         String tel=phone.getText().toString();
         String pass=password.getText().toString();
 
@@ -61,6 +64,7 @@ public class Auth extends AppCompatActivity {
 
    public void onClickReg(View view){
         String fl="2";
+       flag=fl;
        String tel=phone.getText().toString();
        String pass=password.getText().toString();
        Log.d("LOG", "Переменные :" + fl + tel + pass );
@@ -140,13 +144,22 @@ public class Auth extends AppCompatActivity {
            //auth_text.setVisibility(View.GONE);
             String temp="error";
             String idEx=data.toString();
+            idMaster=setIdMaster(idEx);
             if(!temp.equals(idEx)){
            Toast.makeText(Auth.this, R.string.toast_auth_last,Toast.LENGTH_SHORT).show();
+           if(flag.equals("2")){
            Intent intent = new Intent(Auth.this, MasterAdd.class);
 
                 Log.d("LOG Strem", "присвоили переменную idEx ="+idEx);
+
                 intent.putExtra("idEx", idEx);
-           startActivity(intent);
+           startActivity(intent);} else {
+               Intent intent = new Intent(Auth.this, MainActivity.class);
+
+               Log.d("LOG Strem", "присвоили переменную idEx ="+idEx);
+               intent.putExtra("idEx", idEx);
+               startActivity(intent);
+           }
             } else {
                 Toast.makeText(Auth.this, R.string.auth_error, Toast.LENGTH_SHORT).show();
                 String fl=" ";
@@ -157,5 +170,13 @@ public class Auth extends AppCompatActivity {
 
         }
     }
+    public String setIdMaster(String idMaster){
+        this.idMaster=idMaster;
+        Log.d("LOG A", "Setter id="+idMaster);
+        return idMaster;
+    }
 
+    public String getIdMaster() {
+        return idMaster;
+    }
 }
