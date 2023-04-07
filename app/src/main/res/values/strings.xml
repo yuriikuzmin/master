@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Master</string>
-    <string name="btn_add_master">Добавить мастера в базу данных</string>
+    <string name="btn_add_master">Персональные данные мастера</string>
     <string name="btn_order_view">Просмотреть заказы</string>
     <string name="text_master_one">Добро пожаловать в приложение!\n Внесите свои данные в базу и получайте заказы.\n Приложение может потребовать доступ к локации, вашему местопожению.</string>
     <string name="text_add_master">Введите свои данные\n и нажмите кнопку\n "Сохранить данные в базе"</string>
@@ -36,5 +36,6 @@
     <string name="toast_auth">Заполните поля, введите номер телефона и пароль</string>
     <string name="btn_auth">Войти</string>
     <string name="toast_auth_last">Пароль и логин приняты</string>
+    <string name="auth_error">Неправильная пара логин - пароль.</string>
 
 </resources>

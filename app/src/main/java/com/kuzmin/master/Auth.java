@@ -137,11 +137,23 @@ public class Auth extends AppCompatActivity {
         protected void onPostExecute(String data){
             Log.d("LOG", "Проверили на содержание ответ sb.toString=" + data.toString());
            auth_text.setText(data.toString());
-           auth_text.setVisibility(View.GONE);
+           //auth_text.setVisibility(View.GONE);
+            String temp="error";
+            String idEx=data.toString();
+            if(!temp.equals(idEx)){
            Toast.makeText(Auth.this, R.string.toast_auth_last,Toast.LENGTH_SHORT).show();
-           Intent intent = new Intent(Auth.this, MainActivity.class);
+           Intent intent = new Intent(Auth.this, MasterAdd.class);
 
+                Log.d("LOG Strem", "присвоили переменную idEx ="+idEx);
+                intent.putExtra("idEx", idEx);
            startActivity(intent);
+            } else {
+                Toast.makeText(Auth.this, R.string.auth_error, Toast.LENGTH_SHORT).show();
+                String fl=" ";
+                phone.setText("");
+                password.setText("");
+                auth_text.setText(R.string.auth_tv);
+            }
 
         }
     }

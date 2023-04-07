@@ -54,15 +54,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/hint"
             android:hint="@string/text_address_master"/>
-        <EditText
-            android:id="@+id/phone_master"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
-            android:inputType="number"
-            android:hint="@string/text_phone_master"/>
 
         <Button
             android:id="@+id/btn_save_master"
